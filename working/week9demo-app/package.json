@@ -1,7 +1,7 @@
 {
   "name": "week9demo-app",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,4 +18,6 @@
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0"
   }
+  
+  
 }
