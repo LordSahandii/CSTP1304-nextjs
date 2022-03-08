@@ -1,0 +1,66 @@
+body {
+    font: 18px white;
+    background-color:  black;
+}
+
+div {
+    border: 3px dashed;
+    margin: 5px;
+    flex: auto;
+}
+
+.header {
+    background-color: darkred;
+}
+
+.content {
+    background-color: darkblue;
+}
+
+.navigation {
+    background-color: darkmagenta
+}
+.footer {
+    background-color: darkslategray;
+}
+.socials {
+    background-color: darkolivegreen
+}
+
+/* Begin the flexboxes */
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+
+/* Apply all these styles to the classes inside wrapper */
+
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+/* Standard desktop */
+@media all and (min-width: 800px)  {
+
+.content {flex: 4 0px;}
+.header { order: 1;}
+.content { order: 2;}
+.navigation {flex: 1; order:3 ;}
+.socials {flex: 1; order:3 ;}
+.footer { order: 4;}
+}
+
+@media all and (min-width: 600px)   {
+
+.navigation {flex: 2 0px;}
+.header { order: 1;}
+.content { order: 2;}
+.navigation {order:3 ;}
+.socials {flex: 1; order:4 ;}
+.footer { order :5}
+
+
+}
